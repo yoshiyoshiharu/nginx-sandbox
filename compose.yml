@@ -3,3 +3,6 @@ services:
     image: nginx:latest
     volumes:
       - ./etc/nginx:/etc/nginx
+      - ./public:/public
+    ports:
+      - "80:80"
